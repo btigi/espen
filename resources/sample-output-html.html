@@ -1,0 +1,4447 @@
+<html>
+<head>
+<title>
+Meetings_Alumu_in_GoD
+</title>
+<style>
+section.state {
+  background-color: #c0c0c0;
+  padding: 25px;
+  border-radius: 5px;
+  margin: 15px;
+}
+section.output {
+  background-color: #a0a0a0;
+  padding: 25px;
+  border-radius: 5px;
+  margin: 15px;
+  margin-left: 25px;
+}
+section.operation {
+  background-color: #e0e0e0;
+  padding: 25px;
+  border-radius: 5px;
+  margin: 15px;
+  margin-left: 25px;
+}
+section.condition {
+  background-color: #e0e0e0;
+  padding: 25px;
+  border-radius: 5px;
+  margin: 15px;
+  margin-left: 25px;
+}
+section.exitoperation{
+  background-color: #e0e0e0;
+  padding: 25px;
+  border-radius: 5px;
+  margin: 15px;
+  margin-left: 25px;
+}
+</style>
+</head>
+<body>
+Id: Meetings_Alumu_in_GoD<br>
+DisplayName: DIA/Meetings_Alumu_in_GoD/DisplayName<br>
+Availability: Full<br>
+Description: DIA/Meetings_Alumu_in_GoD/Description<br>
+<section class="state">
+<p id="state-0">
+[STATE] 0<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope: Creature [Alumu_GoD]</p>
+<p>    VariableId: dia_meetingsAlumu_talkedToHer</p>
+<p>    CheckValue: False</p>
+</section>
+<p>  [TEXTTOSAY] {PLAYERNAME}, I am glad you are here. We have important matters to discuss, and little time to do so. [VOICELINE] audio\dialogs\alumu\i_am_glad_you_are</p>
+<p>  [NEXTSTATE] <a href="#state-1">1</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] {PLAYERNAME}, I believe there is nothing more for us to discuss. Best of luck to you. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-1">1</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-1">
+[STATE] 1<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] As you know, Deron-Guld and Isilbright are on the cusp of a major battle. The outcome could decide the fate of Isilmerald, and have repercussions beyond her borders as well. [VOICELINE] audio\dialogs\alumu\as_you_know</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: true</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_talkedToHer</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-2">2</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-2">
+[STATE] 2<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] How would you suggest I proceed? [VOICELINE] audio\dialogs\alumu\how_would_you_suggest</p>
+<p>  [NEXTSTATE] <a href="#state-3">3</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-3">
+[STATE] 3<br>
+[TYPE] BGModel.Descriptors.Dialog.AnswersDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] My advice is for you to support Isilbright in the conflict. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-22">22</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] The Rillow should aid Deron-Guld in the upcoming battle. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-95">95</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] You should support neither party. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-9">9</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] You’ll have to figure it out for yourself. My involvement in all this is accidental. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-8">8</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Politics don’t interest me. My motivation is purely financial. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-4">4</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-4">
+[STATE] 4<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] A not atypical position for your countrymen of late, but still disappointing. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-6">6</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-6">
+[STATE] 6<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] I suppose we have nothing more to discuss, {PLAYERNAME}. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.Comment</p>
+<p>    ScopeId: </p>
+<p>    Text: node: end conversation</p>
+<p>    Amount: </p>
+<p>    RawValue: </p>
+<p>    Text: node: end conversation</p>
+<p>    TODO: </p>
+<p>    VariableId: </p>
+<p>    VariableScope: </p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-7">7</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-7">
+[STATE] 7<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] I wish you good fortune in the coming battle, should you choose to get involved. [VOICELINE] audio\dialogs\alumu\i_wish_you_good_fortune</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: only_who_is_left</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: true</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: rillow_neutral</p>
+<p>    VariableScope: Quest</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-175">175</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-8">
+[STATE] 8<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Well, all mortals are ultimately pawns of the higher powers. Though that doesn’t mean one need be utterly passive. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-6">6</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-9">
+[STATE] 9<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] You propose we remain neutral. Interesting. Tell me more. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-10">10</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-10">
+[STATE] 10<br>
+[TYPE] BGModel.Descriptors.Dialog.ExecuteOperationsDialogElement
+</p>
+<p>  [NEXTSTATE] <a href="#state-11">11</a></p>
+<section class="exitoperation">
+<p>  [EXITOPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    CreatedVariableType: </p>
+<p>    CustomFadeInDuration: 0</p>
+<p>    CustomFadeOutDuration: 0</p>
+<p>    OnFadeOutOperations: </p>
+<p>    RawValue: 0</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    TargetArea: </p>
+<p>    VariableId: dia_meetingsAlumu_ProNeutral</p>
+<p>    VariableScope: Creature</p>
+</section>
+<section class="exitoperation">
+<p>  [EXITOPERATION] BGModel.GenericLogic.Operations.Comment</p>
+<p>    CreatedVariableType: </p>
+<p>    CustomFadeInDuration: 0</p>
+<p>    CustomFadeOutDuration: 0</p>
+<p>    OnFadeOutOperations: </p>
+<p>    RawValue: </p>
+<p>    ScopeId: </p>
+<p>    TargetArea: </p>
+<p>    VariableId: </p>
+<p>    VariableScope: </p>
+</section>
+</section>
+<section class="state">
+<p id="state-11">
+[STATE] 11<br>
+[TYPE] BGModel.Descriptors.Dialog.AnswersDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Both sides in this conflict have acted foolishly, and both are wrong. My counsel is that the Rillow support neither faction. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_ProNeutral</p>
+<p>    VariableScope: Creature</p>
+</section>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: false</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_showanswer_BothSides</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-18">18</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] I have reason to suspect both Deron-Guld and Isilbright are being manipulated by malevolent divine forces. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_ProNeutral</p>
+<p>    VariableScope: Creature</p>
+</section>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: false</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_showanswer_IHaveReason</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-16">16</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] To choose between Aldnar and King Velianrick is to support a madman. Your only good option is to remain neutral. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_ProNeutral</p>
+<p>    VariableScope: Creature</p>
+</section>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: false</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_showanswer_ToChooseBetween</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-15">15</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Avoiding the conflict altogether would put you in a stronger position once the battle has finished. One side will be defeated and the other badly weakened. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_ProNeutral</p>
+<p>    VariableScope: Creature</p>
+</section>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: false</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_showanswer_AvoidingTheConflict</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-14">14</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] I’ve made my point. What is your answer? [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-12">12</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-12">
+[STATE] 12<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] The Eastern Empires will take no part in the coming battle, but I wish you good fortune should you choose to do so yourself. [VOICELINE] audio\dialogs\alumu\the_eastern_empires</p>
+<p>  [NEXTSTATE] <a href="#state-13">13</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-13">
+[STATE] 13<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Thank you, {PLAYERNAME}, for meeting with me. You have been a good friend to the Rillow. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: only_who_is_left</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: true</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: rillow_neutral</p>
+<p>    VariableScope: Quest</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-175">175</a></p>
+</section>
+<section class="exitoperation">
+<p>  [EXITOPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    CreatedVariableType: Bool</p>
+<p>    CustomFadeInDuration: 0</p>
+<p>    CustomFadeOutDuration: 0</p>
+<p>    OnFadeOutOperations: </p>
+<p>    RawValue: true</p>
+<p>    ScopeId: only_who_is_left</p>
+<p>    TargetArea: </p>
+<p>    VariableId: convince_alumu_of_neutrality</p>
+<p>    VariableScope: Quest</p>
+</section>
+</section>
+<section class="state">
+<p id="state-14">
+[STATE] 14<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Ah, now you are talking sense. Those were my thoughts as well. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-11">11</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-15">
+[STATE] 15<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] I cannot argue with that reasoning. I would be as insane as they to place my trust in either of them. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-11">11</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-16">
+[STATE] 16<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] What a fantastical explanation! You believe the gods have brought this misfortune down upon every lord, commoner and pauper in the land? I find that hard to credit. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-17">17</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-17">
+[STATE] 17<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] But I will set my skepticism aside and keep it in mind. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-11">11</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-18">
+[STATE] 18<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Perhaps I have not properly explained my position, {PLAYERNAME}. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-19">19</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-19">
+[STATE] 19<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] I serve Elenuator. My business is the prosperity of the Eastern Empires. And I care for the well being of my people. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-20">20</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-20">
+[STATE] 20<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] If I am able to serve these interests, the matter of who is right and who wrong is of little import to me. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-21">21</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-21">
+[STATE] 21<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] But I do take your point. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-11">11</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-22">
+[STATE] 22<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Really. I trust you will explain yourself. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.Comment</p>
+<p>    ScopeId: </p>
+<p>    Text: node: pro-Isilbright</p>
+<p>    Amount: </p>
+<p>    RawValue: </p>
+<p>    Text: node: pro-Isilbright</p>
+<p>    TODO: </p>
+<p>    VariableId: </p>
+<p>    VariableScope: </p>
+</section>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 0</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_ProIsilbright</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-23">23</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-23">
+[STATE] 23<br>
+[TYPE] BGModel.Descriptors.Dialog.AnswersDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Lord Aldnar has taken control of Deron-Guld. He’s a madman and twice a traitor, first to his nation and king, and second to the War Council that took him in. He would make a terrible ally, no matter the circumstances. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_ProIsilbright</p>
+<p>    VariableScope: Creature</p>
+</section>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: false</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_showanswer_LordAldnarHasTakenCtrl</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-24">24</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] The War Council are nothing but a group of squabbling incompetents since they allowed their leader to be slain by the madman Aldnar. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_ProIsilbright</p>
+<p>    VariableScope: Creature</p>
+</section>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: false</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_showanswer_TheWarCouncil</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-25">25</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] King Velianrick is both a powerful ally, and the legitimate ruler of Isilmerald. Most importantly, his is the better equipped and more numerous army. His Majesty is the obvious choice. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_ProIsilbright</p>
+<p>    VariableScope: Creature</p>
+</section>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: false</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_showanswer_KingVelianrickIsBoth</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-27">27</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] I’m sure I need not remind you of your pledge of military support to Isilbright. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_ProIsilbright</p>
+<p>    VariableScope: Creature</p>
+</section>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: false</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_showanswer_ImSureINeedNot</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-28">28</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Aren't you concerned the king might notice such halfhearted fulfillment of your responsibilities? [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: false</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_showanswer_ArentYouConcerned</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-30">30</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Isilbright is the rightful capital of Isilmerald and Velianrick its legitimate ruler, whatever his flaws. Deron-Guld is simply a malcontent rebel faction. They will never seize power, but their rebellion will wreak havoc and badly hurt the Eastern Empires’ efforts to advance trade. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_ProIsilbright</p>
+<p>    VariableScope: Creature</p>
+</section>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: false</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_showanswer_IsilbrightIsTheRightful</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-32">32</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] I believe siding with Isilbright to be the correct course of action, and if you consider your options, I think you will too. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_ProIsilbright</p>
+<p>    VariableScope: Creature</p>
+</section>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: false</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_showanswer_IBelieveSiding</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-31">31</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Based on what we’ve discussed so far, Isilbright is plainly your best choice of ally. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-34">34</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-24">
+[STATE] 24<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] I am familiar with the rather strange route Aldnar took on the way to his current position of power. But the moral underpinnings of these squabbles and doublecrosses do not concern me. As for his madness, perhaps it can be played to our advantage. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-23">23</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-25">
+[STATE] 25<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Yes, I heard about that unfortunate incident. It is a pity they lost Lord Frelsi. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-26">26</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-26">
+[STATE] 26<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] You’ve signaled that the Rillow should not support Deron-Guld, but why should I choose King Velianrick? [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-23">23</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-27">
+[STATE] 27<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] These are undeniably strong points, but my spies– I mean emissaries, have reported that Velianrick has become unstable, even irrational at times. Unpredictable men make dangerous allies. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-23">23</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-28">
+[STATE] 28<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Yes, I haven’t forgotten. The Rillow will honor that agreement no matter what, but the fighters under my command are few compared to the armies of Isilbright and Deron-Guld. I doubt we have the numbers to decide the battle. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-29">29</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-29">
+[STATE] 29<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] You may count on us to send a respectable contingent, but I will not sacrifice so many lives that it endangers the Garden of Delights. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-23">23</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-30">
+[STATE] 30<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] I promise I will be there with a military force. What happens then will depend upon what I see on the field. Whatever we do, I doubt Velianrick will notice the difference. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-23">23</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-31">
+[STATE] 31<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] No. I do not. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-23">23</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-32">
+[STATE] 32<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Chaos isn’t good for trade, that is true, but Deron-Guld’s actions don’t worry me overmuch. We did help them cure their plague. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-33">33</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-33">
+[STATE] 33<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] King Velianrick, on the other hand, seems to be growing more erratic in his decisions every day. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-23">23</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-34">
+[STATE] 34<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Well, you’ve made it clear that’s what you believe, but why should I place my trust in you? [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-35">35</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-35">
+[STATE] 35<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope: Creature [Siracca]</p>
+<p>    VariableId: SiraccaQuestline</p>
+<p>    CheckValue: 2</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-36">36</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-37">37</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-36">
+[STATE] 36<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] You aided the heretic Siracca in pursuing her blasphemies against Elenuator. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 10</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-37">37</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-37">
+[STATE] 37<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: CrimsonCrossing</p>
+<p>    CheckValue: 1</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-38">38</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-39">39</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-38">
+[STATE] 38<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] You delivered Crimson Crossing, territory which should belong to my people, into the hands of King Velianrick. This does not lead me to believe you have the Rillow’s best interests in mind. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 10</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-39">39</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-39">
+[STATE] 39<br>
+[TYPE] BGModel.Descriptors.Dialog.AnswersDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Remember that I delivered Crimson Crossing into your hands, giving you control of trade in that region. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: false</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_showanswer_RememberThatIDelivered</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-40">40</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Remember that I kept Crimson Crossing out of Velianrick’s hands, maintaining fair access to trade for the people of that region. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: false</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_showanswer_RememberThatIKept</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-41">41</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] I turned Siracca away from her heresy and onto the righteous path of Elenuator. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: false</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_showanswer_ITurnedSiracca</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-42">42</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] I helped you secure very favorable trade terms with Isilbright. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: false</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_showanswer_IHElpedSecureTradeTerms</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-43">43</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] I helped you secure a treaty with Isilbright. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: false</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_showanswer_IHelpedSecureTreaty</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-44">44</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] My integrity and sound judgement are common knowledge across the land. Ask any of my allies. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: false</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_showanswer_MyIntegrity</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-50">50</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] I have said what I’ve come to say. The smart thing for the Rillow is to side with Isilbright in the coming battle. <i>(Bargain and Persuasion)</i> [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-45">45</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-40">
+[STATE] 40<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Yes, I appreciate your help in that matter. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -10</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-39">39</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-41">
+[STATE] 41<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Prettily said. The fact of the matter is that you had the opportunity to take our side on this issue, and did not. We still must pay Crimson Crossing’s outrageous tariffs. They’re hardly better than highwaymen. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-39">39</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-42">
+[STATE] 42<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] You did, and it is no small thing. You showed great respect for our religion and culture, even though your actions did not benefit you personally. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -10</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-39">39</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-43">
+[STATE] 43<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Yes, I admire how you capitalized on that crisis. You and I are birds of a feather, I believe. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -10</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-39">39</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-44">
+[STATE] 44<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] That is true, but the outcome was not as favorable as we had hoped… and King Velianrick’s negotiation of terms was oddly lucid, considering recent reports of his mental well being. Or lack thereof. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-39">39</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-45">
+[STATE] 45<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<section class="condition">
+<p>    [CONDITION] BGModel.GenericLogic.Conditions.GeneralSkillCheckCondition</p>
+<p>      Scope:  []</p>
+<p>      Variable: </p>
+<p>      CheckValue: 0.8</p>
+<p>      Modifier.Type: BGModel.GenericLogic.ValueCheckConditionModifier</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-46">46</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-48">48</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-46">
+[STATE] 46<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Very well, I choose to accept your advice. The Rillow will throw their full support behind King Velianrick. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-47">47</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-47">
+[STATE] 47<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] I will see you on the battlefield, {PLAYERNAME}. [VOICELINE] audio\dialogs\alumu\i_will_see_you</p>
+<p>  [NEXTSTATE] <a href="#state-175">175</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-48">
+[STATE] 48<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] I am still not convinced. My priority will always be the security of my people, and I do not see that security being furthered by a deeper commitment to Isilbright. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: only_who_is_left</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: true</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: rillow_neutral</p>
+<p>    VariableScope: Quest</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-49">49</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-49">
+[STATE] 49<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Good luck in the coming battle, {PLAYERNAME}. [VOICELINE] audio\dialogs\alumu\good_luck</p>
+<p>  [NEXTSTATE] <a href="#state-175">175</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-50">
+[STATE] 50<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.IsInPartyCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.IsInPartyCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: </p>
+<p>    CheckValue: </p>
+<p>    Creature: helgenhar BGModel.Reference.CreatureDescRef</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-51">51</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-55">55</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-51">
+[STATE] 51<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope: Creature [helgenhar]</p>
+<p>    VariableId: HelgenharRep</p>
+<p>    CheckValue: 4</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-52">52</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope: Creature [helgenhar]</p>
+<p>    VariableId: HelgenharRep</p>
+<p>    CheckValue: </p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-53">53</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-54">54</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-52">
+[STATE] 52<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: player_sex</p>
+<p>    CheckValue: female</p>
+</section>
+<p>  [TEXTTOSAY] {PLAYERNAME} is as noble and forthright an ally as a person could wish for. I think of her as my favorite dwarf. [VOICELINE] audio\dialogs\helgenhar\She_is_as</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -5</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-55">55</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] {PLAYERNAME} is as noble and forthright an ally as a person could wish for. I think of him as my favorite dwarf. [VOICELINE] audio\dialogs\helgenhar\He_is_as</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -5</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-55">55</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-53">
+[STATE] 53<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Yes, {PLAYERNAME} has proven honest and capable in our dealings. [VOICELINE] audio\dialogs\helgenhar\Yes_theyve_proven</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-55">55</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-54">
+[STATE] 54<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] I cannot in good faith vouchsafe {PLAYERNAME}’s integrity to anyone. However, I prefer to keep my reasons to myself. [VOICELINE] audio\dialogs\helgenhar\I_cannot_in</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-55">55</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-55">
+[STATE] 55<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.IsInPartyCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.IsInPartyCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: </p>
+<p>    CheckValue: </p>
+<p>    Creature: Hamlin BGModel.Reference.CreatureDescRef</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-56">56</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-60">60</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-56">
+[STATE] 56<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope: Creature [Hamlin]</p>
+<p>    VariableId: HamlinRep</p>
+<p>    CheckValue: 4</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-57">57</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope: Creature [Hamlin]</p>
+<p>    VariableId: HamlinRep</p>
+<p>    CheckValue: </p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-58">58</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-59">59</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-57">
+[STATE] 57<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 1 Hamlin#Hamlin</p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: player_sex</p>
+<p>    CheckValue: female</p>
+</section>
+<p>  [TEXTTOSAY] I will vouch for this woman’s integrity and wisdom before Elenuator himself if you ask me to. [VOICELINE] audio\dialogs\hamlin\i_will_vouch_woman</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -5</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-60">60</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 1 Hamlin#Hamlin</p>
+<p>  [TEXTTOSAY] I will vouch for this man’s integrity and wisdom before Elenuator himself if you ask me to. [VOICELINE] audio\dialogs\hamlin\i_will_vouch_man</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -5</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-60">60</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-58">
+[STATE] 58<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 1 Hamlin#Hamlin</p>
+<p>  [TEXTTOSAY] Our time together has been both enjoyable and profitable. [VOICELINE] audio\dialogs\hamlin\our_time</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-60">60</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-59">
+[STATE] 59<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 1 Hamlin#Hamlin</p>
+<p>  [TEXTTOSAY] Ha! If there’s anything good to say about this fool, it doesn’t come to mind. [VOICELINE] audio\dialogs\hamlin\ha_if</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-60">60</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-60">
+[STATE] 60<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<section class="condition">
+<p>    [CONDITION] BGModel.GenericLogic.Conditions.IsInPartyCondition</p>
+<p>      Scope:  []</p>
+<p>      Variable: </p>
+<p>      CheckValue: </p>
+<p>      Modifier.Type: </p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-61">61</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-65">65</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-61">
+[STATE] 61<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<section class="condition">
+<p>    [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>      Scope: Creature [Siracca]</p>
+<p>      Variable: SiraccaQuestline</p>
+<p>      CheckValue: 1</p>
+<p>      Modifier.Type: </p>
+<p>    [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>      Scope: Creature [Siracca]</p>
+<p>      Variable: SiraccaRep</p>
+<p>      CheckValue: 3</p>
+<p>      Modifier.Type: </p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-62">62</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-63">63</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<section class="condition">
+<p>    [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>      Scope: Creature [Siracca]</p>
+<p>      Variable: SiraccaQuestline</p>
+<p>      CheckValue: 1</p>
+<p>      Modifier.Type: </p>
+<p>    [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>      Scope: Creature [Siracca]</p>
+<p>      Variable: SiraccaRep</p>
+<p>      CheckValue: </p>
+<p>      Modifier.Type: </p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-64">64</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-65">65</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-62">
+[STATE] 62<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 2 Siracca#Siracca</p>
+<p>  [TEXTTOSAY] Alumu, this noble has been an inspiration to me and, I’m sure, to all goodhearted people we’ve encountered. [VOICELINE] audio\dialogs\siracca\alumu</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -5</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-65">65</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-63">
+[STATE] 63<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 2 Siracca#Siracca</p>
+<p>  [TEXTTOSAY] Yes, I have found {PLAYERNAME} to be a reliable leader and a good friend. [VOICELINE] audio\dialogs\siracca\yes_i_have</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-65">65</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-64">
+[STATE] 64<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 2 Siracca#Siracca</p>
+<p>  [TEXTTOSAY] I am not prepared to laud your actions, if that's what you're expecting. [VOICELINE] audio\dialogs\siracca\i_am_not</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-65">65</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-65">
+[STATE] 65<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.IsInPartyCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.IsInPartyCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: </p>
+<p>    CheckValue: </p>
+<p>    Creature: bjalla BGModel.Reference.CreatureDescRef</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-66">66</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-70">70</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-66">
+[STATE] 66<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope: Creature [bjalla]</p>
+<p>    VariableId: BjallaRep</p>
+<p>    CheckValue: 4</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-67">67</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope: Creature [bjalla]</p>
+<p>    VariableId: BjallaRep</p>
+<p>    CheckValue: </p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-68">68</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-69">69</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-67">
+[STATE] 67<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 3 bjalla#bjalla</p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: player_sex</p>
+<p>    CheckValue: female</p>
+</section>
+<p>  [TEXTTOSAY] I have my entire life been surrounded by the nobility, but the woman standing here is more noble than any I have met. I trust her with my life. [VOICELINE] audio\dialogs\bjalla\I_have_my__woman</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -5</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-70">70</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 3 bjalla#bjalla</p>
+<p>  [TEXTTOSAY] I have my entire life been surrounded by the nobility, but the man standing here is more noble than any I have met. I trust him with my life. [VOICELINE] audio\dialogs\bjalla\I_have_my__man</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -5</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-70">70</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-68">
+[STATE] 68<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 3 bjalla#bjalla</p>
+<p>  [TEXTTOSAY] I will commend {PLAYERNAME}’s honesty to any who ask. [VOICELINE] audio\dialogs\bjalla\I_will_commend</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-70">70</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-69">
+[STATE] 69<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 3 bjalla#bjalla</p>
+<p>  [TEXTTOSAY] {PLAYERNAME}, if you truly wished to earn my respect, you would be much more careful of your actions. [VOICELINE] audio\dialogs\bjalla\If_you_truly</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-70">70</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-70">
+[STATE] 70<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.IsInPartyCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.IsInPartyCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: </p>
+<p>    CheckValue: </p>
+<p>    Creature: Phimm BGModel.Reference.CreatureDescRef</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-71">71</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-75">75</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-71">
+[STATE] 71<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope: Creature [Phimm]</p>
+<p>    VariableId: PhimmRep</p>
+<p>    CheckValue: 4</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-72">72</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope: Creature [Phimm]</p>
+<p>    VariableId: PhimmRep</p>
+<p>    CheckValue: </p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-73">73</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-74">74</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-72">
+[STATE] 72<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 4 Phimm#Phimm</p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: player_sex</p>
+<p>    CheckValue: female</p>
+</section>
+<p>  [TEXTTOSAY] Lady, this tart has been the biggest laugh I’ve ever had. That’s the best thing I can say about anyone. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -5</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-75">75</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Lady, this bastard has been the biggest laugh I’ve ever had. That’s the best thing I can say about anyone. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -5</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-75">75</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-73">
+[STATE] 73<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 4 Phimm#Phimm</p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: player_sex</p>
+<p>    CheckValue: female</p>
+</section>
+<p>  [TEXTTOSAY] Eh. She’s all right. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-75">75</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Eh. He’s all right. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-75">75</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-74">
+[STATE] 74<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 4 Phimm#Phimm</p>
+<p>  [TEXTTOSAY] If I ever meet anyone duller than this imbecile, I’ll probably fall dead on the spot. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-75">75</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-75">
+[STATE] 75<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.IsInPartyCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.IsInPartyCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: </p>
+<p>    CheckValue: </p>
+<p>    Creature: Jade_the_NecroGoth BGModel.Reference.CreatureDescRef</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-76">76</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-80">80</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-76">
+[STATE] 76<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope: Creature [Jade_the_NecroGoth]</p>
+<p>    VariableId: JadeRep</p>
+<p>    CheckValue: 4</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-77">77</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope: Creature [Jade_the_NecroGoth]</p>
+<p>    VariableId: JadeRep</p>
+<p>    CheckValue: </p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-78">78</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-79">79</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-77">
+[STATE] 77<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 5 Jade_the_NecroGoth#Jade_the_NecroGoth</p>
+<p>  [TEXTTOSAY] {PLAYERNAME} is the best friend and traveling companion I’ve ever known. If {he/she} ever died, I don’t know what I’d do! Metaphorically. I know exactly what I’d do. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -5</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-80">80</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-78">
+[STATE] 78<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 5 Jade_the_NecroGoth#Jade_the_NecroGoth</p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: player_sex</p>
+<p>    CheckValue: female</p>
+</section>
+<p>  [TEXTTOSAY] She's been a good friend to me when no one else was there. I stand by her. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-80">80</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] He's been a good friend to me when no one else was there. I stand by him. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-80">80</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-79">
+[STATE] 79<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 5 Jade_the_NecroGoth#Jade_the_NecroGoth</p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: player_sex</p>
+<p>    CheckValue: female</p>
+</section>
+<p>  [TEXTTOSAY] She’s a bit namby-pamby for my tastes. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-80">80</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] He’s a bit namby-pamby for my tastes. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-80">80</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-80">
+[STATE] 80<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.IsInPartyCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.IsInPartyCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: </p>
+<p>    CheckValue: </p>
+<p>    Creature: sea_hag BGModel.Reference.CreatureDescRef</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-81">81</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-85">85</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-81">
+[STATE] 81<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope: Creature [sea_hag]</p>
+<p>    VariableId: TheSeaHagRep</p>
+<p>    CheckValue: 4</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-82">82</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope: Creature [sea_hag]</p>
+<p>    VariableId: TheSeaHagRep</p>
+<p>    CheckValue: </p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-83">83</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-84">84</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-82">
+[STATE] 82<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 6 sea_hag#sea_hag</p>
+<p>  [TEXTTOSAY] Though I have spoken and traveled with countless folks in my time, I think I have never been fonder of any of them than I am of this wanderer. [VOICELINE] audio\dialogs\sea_hag\Though_I_have</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -5</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-85">85</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-83">
+[STATE] 83<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 6 sea_hag#sea_hag</p>
+<p>  [TEXTTOSAY] During our travels, {PLAYERNAME} has given me much to think on, and most of it good. [VOICELINE] audio\dialogs\sea_hag\During_our_travels</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-85">85</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-84">
+[STATE] 84<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 6 sea_hag#sea_hag</p>
+<p>  [TEXTTOSAY] I have in my long life often considered my own end. With my companion here, I have been considering it daily, even hourly. [VOICELINE] audio\dialogs\sea_hag\I_have_in</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-85">85</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-85">
+[STATE] 85<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.IsInPartyCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.IsInPartyCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: </p>
+<p>    CheckValue: </p>
+<p>    Creature: arvex BGModel.Reference.CreatureDescRef</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-86">86</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-90">90</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-86">
+[STATE] 86<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope: Creature [arvex]</p>
+<p>    VariableId: ArvexRep</p>
+<p>    CheckValue: 4</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-87">87</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope: Creature [arvex]</p>
+<p>    VariableId: ArvexRep</p>
+<p>    CheckValue: </p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-88">88</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-89">89</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-87">
+[STATE] 87<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 7 arvex#arvex</p>
+<p>  [TEXTTOSAY] Our adventures with {PLAYERNAME} have almost made me forget my longing for death. Almost. [VOICELINE] audio\dialogs\Arvex\our_adventures</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -5</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-90">90</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-88">
+[STATE] 88<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 7 arvex#arvex</p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: player_sex</p>
+<p>    CheckValue: female</p>
+</section>
+<p>  [TEXTTOSAY] That I still follow her is all you need to know. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-90">90</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 7 arvex#arvex</p>
+<p>  [TEXTTOSAY] That I still follow him is all you need to know. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-90">90</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-89">
+[STATE] 89<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 7 arvex#arvex</p>
+<p>  [TEXTTOSAY] No, I would not recommend anyone to travel or break bread with this coward. [VOICELINE] audio\dialogs\Arvex\no_i_would_not</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-90">90</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-90">
+[STATE] 90<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.IsInPartyCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.IsInPartyCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: </p>
+<p>    CheckValue: </p>
+<p>    Creature: Rabinandera BGModel.Reference.CreatureDescRef</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-93">93</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-91">91</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-91">
+[STATE] 91<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Illuminating. Yes, I believe I have some notion of your reputation now. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-92">92</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-92">
+[STATE] 92<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.IsInPartyCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.IsInPartyCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: </p>
+<p>    CheckValue: </p>
+<p>    Creature: Rabinandera BGModel.Reference.CreatureDescRef</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-94">94</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-39">39</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-93">
+[STATE] 93<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 8 Rabinandera#Rabinandera</p>
+<p>  [TEXTTOSAY] It is the sun I hate! Round face, coin-like, unreachable gold. Kill again soon? [VOICELINE] audio\dialogs\Rabinandera\it_is_the_sun</p>
+<p>  [NEXTSTATE] <a href="#state-91">91</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-94">
+[STATE] 94<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Though that shaman frankly confuses me. Why– Never mind. Let’s not get distracted from our discussion. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-39">39</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-95">
+[STATE] 95<br>
+[TYPE] BGModel.Descriptors.Dialog.ExecuteOperationsDialogElement
+</p>
+<p>  [NEXTSTATE] <a href="#state-96">96</a></p>
+<section class="exitoperation">
+<p>  [EXITOPERATION] BGModel.GenericLogic.Operations.Comment</p>
+<p>    CreatedVariableType: </p>
+<p>    CustomFadeInDuration: 0</p>
+<p>    CustomFadeOutDuration: 0</p>
+<p>    OnFadeOutOperations: </p>
+<p>    RawValue: </p>
+<p>    ScopeId: </p>
+<p>    TargetArea: </p>
+<p>    VariableId: </p>
+<p>    VariableScope: </p>
+</section>
+<section class="exitoperation">
+<p>  [EXITOPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    CreatedVariableType: </p>
+<p>    CustomFadeInDuration: 0</p>
+<p>    CustomFadeOutDuration: 0</p>
+<p>    OnFadeOutOperations: </p>
+<p>    RawValue: 0</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    TargetArea: </p>
+<p>    VariableId: dia_meetingsAlumu_proDG</p>
+<p>    VariableScope: Creature</p>
+</section>
+</section>
+<section class="state">
+<p id="state-96">
+[STATE] 96<br>
+[TYPE] BGModel.Descriptors.Dialog.AnswersDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] The new leader of Deron-Guld’s rebellion is committed to victory, and he won’t balk if a little blood is spilled on the way. That is the kind of strong ally your people need. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_proDG</p>
+<p>    VariableScope: Creature</p>
+</section>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: false</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_showanswer_NewLeaderofDG</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-97">97</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Deron-Guld’s true interest is in trade, not war. Their ruling council issued a very modest list of demands to King Velianrick, but thanks to his greed and arrogance he rejected them outright. Once this unpleasantness is behind us, Deron-Guld will prove a reasonable and reliable trade partner to the Rillow. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_proDG</p>
+<p>    VariableScope: Creature</p>
+</section>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: false</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_showanswer_DGTrueInterest</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-99">99</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] King Velianrick is mad with greed and it is plainly affecting his judgement. It would be foolhardy indeed for the Eastern Empires to form an alliance with such a man. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_proDG</p>
+<p>    VariableScope: Creature</p>
+</section>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: false</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_showanswer_KVisMad</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-101">101</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Your treaty with Isilbright will soon be worthless. The king is beyond saving. He will never honor the terms you’ve agreed upon. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_proDG</p>
+<p>    VariableScope: Creature</p>
+</section>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: false</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_showanswer_TreatyWithIsilbrightWorthless</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-106">106</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] But surely everyone will know if you don’t commit your forces in the fight. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: false</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_showanswer_ButSurelyEveryone</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-108">108</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Deron-Guld is on the side of the righteous. Velianrick has oppressed the people of Isilmerald long enough! [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_proDG</p>
+<p>    VariableScope: Creature</p>
+</section>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: false</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_showanswer_DGisOnTheSideOf</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-109">109</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Deron-Guld needs the Rillow. Without your support, they must surely fall. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_proDG</p>
+<p>    VariableScope: Creature</p>
+</section>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: false</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_showanswer_DGneedsRillow</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-112">112</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] It should be clear to you now that supporting Deron-Guld represents the best choice for your people. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-114">114</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-97">
+[STATE] 97<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] You speak of Lord Aldnar of course, your half-brother I believe? [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-98">98</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-98">
+[STATE] 98<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] He is unfortunately a bit hot-headed for my liking, and he’s spilled more than a little blood already. I don’t trust him. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-96">96</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-99">
+[STATE] 99<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] I do not doubt their prowess as merchants, but we are speaking of war just now. Wasn’t their leader executed out of hand by that rabid traitor Aldnar? Such weakness doesn’t fill me with confidence. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-100">100</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-100">
+[STATE] 100<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] It is a pity Lord Frelsi is no longer with us. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-96">96</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-101">
+[STATE] 101<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Do you know who are the easiest sort of men to manipulate? Madmen. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-102">102</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-102">
+[STATE] 102<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.IsInPartyCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.IsInPartyCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: </p>
+<p>    CheckValue: </p>
+<p>    Creature: Rabinandera BGModel.Reference.CreatureDescRef</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-103">103</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-104">104</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-103">
+[STATE] 103<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 8 Rabinandera#Rabinandera</p>
+<p>  [TEXTTOSAY] Light in eye hurts! Like mutton better. Head has hard edge. [VOICELINE] audio\dialogs\Rabinandera\light_in_eye</p>
+<p>  [NEXTSTATE] <a href="#state-104">104</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-104">
+[STATE] 104<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] And those in love. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-105">105</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-105">
+[STATE] 105<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] The two aren’t so very different. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-96">96</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-106">
+[STATE] 106<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Be that as it may, I am not convinced Deron-Guld is the better option. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-107">107</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-107">
+[STATE] 107<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] And I have already reached out to the War Council with a promise of support. If they somehow overcome the staggering odds against them, I shall arrive shortly thereafter to offer my wholehearted congratulations. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-96">96</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-108">
+[STATE] 108<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] The Rillow will be there with a military force. What I decide to do with that force will depend upon what I see on the field. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-96">96</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-109">
+[STATE] 109<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Perhaps I have not properly explained my position, {PLAYERNAME}. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-110">110</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-110">
+[STATE] 110<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] I serve Elenuator. My business is the prosperity of the Eastern Empires. And I care for the well being of my people. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-111">111</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-111">
+[STATE] 111<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] If I am able to serve these interests, the matter of who rules Isilmerald and how they govern your people is of little import to me. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-96">96</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-112">
+[STATE] 112<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] All the more reason not to interfere. The Rillow under my command are few compared to the armies of Isilbright and Deron-Guld. Whatever action we undertake is unlikely to decide the course of the battle. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-113">113</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-113">
+[STATE] 113<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Better to preserve my warriors against whatever threat may present itself in the aftermath, than sacrifice them to a doomed cause. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-96">96</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-114">
+[STATE] 114<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] It is clear to me that you believe that. But why should I place my trust in you? [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-115">115</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-115">
+[STATE] 115<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope: Creature [Siracca]</p>
+<p>    VariableId: SiraccaQuestline</p>
+<p>    CheckValue: 2</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-116">116</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-117">117</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-116">
+[STATE] 116<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] You aided the heretic Siracca in pursuing her blasphemies against Elenuator. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 10</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-117">117</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-117">
+[STATE] 117<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: CrimsonCrossing</p>
+<p>    CheckValue: 1</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-118">118</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-119">119</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-118">
+[STATE] 118<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] You delivered Crimson Crossing, territory which should belong to my people, into the hands of King Velianrick. This does not suggest you have the Rillow’s interests in mind. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 10</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-119">119</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-119">
+[STATE] 119<br>
+[TYPE] BGModel.Descriptors.Dialog.AnswersDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Remember that I delivered Crimson Crossing into your hands, giving you control over trade in the region. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: false</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_showanswer_RememberThatIDelivered</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-120">120</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Remember that I kept Crimson Crossing out of Velianrick’s hands, maintaining fair access to trade for the people of that region. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: false</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_showanswer_RememberThatIKept</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-121">121</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] I turned Siracca away from her heresy and onto the righteous path of Elenuator. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: false</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_showanswer_ITurnedSiracca</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-122">122</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] I helped you secure very favorable trade terms with Isilbright. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: false</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_showanswer_IHElpedSecureTradeTerms</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-123">123</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] I helped you secure a treaty with Isilbright. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: false</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_showanswer_IHelpedSecureTreaty</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-124">124</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] My integrity and sound judgement are common knowledge across the land. Ask any of my allies. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: false</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_showanswer_MyIntegrity</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-125">125</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] I have made my argument. The best thing for the Rillow is to side with Deron-Guld in the coming battle. <i>(Bargain and Persuasion)</i> [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-126">126</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-120">
+[STATE] 120<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Yes, I appreciate your help in that matter. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -10</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-119">119</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-121">
+[STATE] 121<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Prettily said. The fact of the matter is that you had the opportunity to take our side on this issue, and did not. We still must pay Crimson Crossing’s outrageous tariffs. They’re hardly better than highwaymen. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-119">119</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-122">
+[STATE] 122<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] You did, and it is no small thing. You showed great respect for our religion and culture, even though your actions did not benefit you personally. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -10</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-119">119</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-123">
+[STATE] 123<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Yes, I admire how you capitalized on that crisis. However, you are now asking us to support Deron-Guld, in which case the treaty is no longer of any benefit. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-119">119</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-124">
+[STATE] 124<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] That is true, but the point is moot. You are now asking us to support Deron-Guld, in which case the treaty is no longer of any benefit. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-119">119</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-125">
+[STATE] 125<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.IsInPartyCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.IsInPartyCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: </p>
+<p>    CheckValue: </p>
+<p>    Creature: helgenhar BGModel.Reference.CreatureDescRef</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-131">131</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-135">135</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-126">
+[STATE] 126<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<section class="condition">
+<p>    [CONDITION] BGModel.GenericLogic.Conditions.GeneralSkillCheckCondition</p>
+<p>      Scope:  []</p>
+<p>      Variable: </p>
+<p>      CheckValue: 0.8</p>
+<p>      Modifier.Type: BGModel.GenericLogic.ValueCheckConditionModifier</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-129">129</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-127">127</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-127">
+[STATE] 127<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] I am still not convinced. My priority will always be the security of my people, and I do not see that security being furthered by siding with Deron-Guld. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    ScopeId: only_who_is_left</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: true</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: rillow_neutral</p>
+<p>    VariableScope: Quest</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-128">128</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-128">
+[STATE] 128<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Good luck in the coming battle, {PLAYERNAME}. [VOICELINE] audio\dialogs\alumu\good_luck</p>
+<p>  [NEXTSTATE] <a href="#state-175">175</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-129">
+[STATE] 129<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Very well, I choose to accept your advice. The Rillow will throw their full support behind Deron-Guld. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-130">130</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-130">
+[STATE] 130<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] I will see you on the battlefield, {PLAYERNAME}. [VOICELINE] audio\dialogs\alumu\i_will_see_you</p>
+<p>  [NEXTSTATE] <a href="#state-175">175</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-131">
+[STATE] 131<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope: Creature [helgenhar]</p>
+<p>    VariableId: HelgenharRep</p>
+<p>    CheckValue: 4</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-132">132</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope: Creature [helgenhar]</p>
+<p>    VariableId: HelgenharRep</p>
+<p>    CheckValue: </p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-133">133</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-134">134</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-132">
+[STATE] 132<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: player_sex</p>
+<p>    CheckValue: female</p>
+</section>
+<p>  [TEXTTOSAY] {PLAYERNAME} is as noble and forthright an ally as a person could wish for. I think of her as my favorite dwarf. [VOICELINE] audio\dialogs\helgenhar\She_is_as</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -5</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-135">135</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] {PLAYERNAME} is as noble and forthright an ally as a person could wish for. I think of him as my favorite dwarf. [VOICELINE] audio\dialogs\helgenhar\He_is_as</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -5</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-135">135</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-133">
+[STATE] 133<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Yes, {PLAYERNAME} has proven honest and capable in our dealings. [VOICELINE] audio\dialogs\helgenhar\Yes_theyve_proven</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-135">135</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-134">
+[STATE] 134<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] I cannot in good faith vouchsafe {PLAYERNAME}’s integrity to anyone. However, I prefer to keep my reasons to myself. [VOICELINE] audio\dialogs\helgenhar\I_cannot_in</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-135">135</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-135">
+[STATE] 135<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.IsInPartyCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.IsInPartyCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: </p>
+<p>    CheckValue: </p>
+<p>    Creature: Hamlin BGModel.Reference.CreatureDescRef</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-136">136</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-140">140</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-136">
+[STATE] 136<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope: Creature [Hamlin]</p>
+<p>    VariableId: HamlinRep</p>
+<p>    CheckValue: 4</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-137">137</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope: Creature [Hamlin]</p>
+<p>    VariableId: HamlinRep</p>
+<p>    CheckValue: </p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-138">138</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-139">139</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-137">
+[STATE] 137<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 1 Hamlin#Hamlin</p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: player_sex</p>
+<p>    CheckValue: female</p>
+</section>
+<p>  [TEXTTOSAY] I will vouch for this woman’s integrity and wisdom before Elenuator himself if you ask me to. [VOICELINE] audio\dialogs\hamlin\i_will_vouch_woman</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -5</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-140">140</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 1 Hamlin#Hamlin</p>
+<p>  [TEXTTOSAY] I will vouch for this man’s integrity and wisdom before Elenuator himself if you ask me to. [VOICELINE] audio\dialogs\hamlin\i_will_vouch_man</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -5</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-140">140</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-138">
+[STATE] 138<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 1 Hamlin#Hamlin</p>
+<p>  [TEXTTOSAY] Our time together has been both enjoyable and profitable. [VOICELINE] audio\dialogs\hamlin\our_time</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-140">140</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-139">
+[STATE] 139<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 1 Hamlin#Hamlin</p>
+<p>  [TEXTTOSAY] Ha! If there’s anything good to say about this fool, it doesn’t come to mind. [VOICELINE] audio\dialogs\hamlin\ha_if</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-140">140</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-140">
+[STATE] 140<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.IsInPartyCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.IsInPartyCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: </p>
+<p>    CheckValue: </p>
+<p>    Creature: Siracca BGModel.Reference.CreatureDescRef</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-141">141</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-145">145</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-141">
+[STATE] 141<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<section class="condition">
+<p>    [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>      Scope: Creature [Siracca]</p>
+<p>      Variable: SiraccaRep</p>
+<p>      CheckValue: 3</p>
+<p>      Modifier.Type: </p>
+<p>    [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>      Scope: Creature [Siracca]</p>
+<p>      Variable: SiraccaQuestline</p>
+<p>      CheckValue: 1</p>
+<p>      Modifier.Type: </p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-142">142</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<section class="condition">
+<p>    [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>      Scope: Creature [Siracca]</p>
+<p>      Variable: SiraccaQuestline</p>
+<p>      CheckValue: 1</p>
+<p>      Modifier.Type: </p>
+<p>    [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>      Scope: Creature [Siracca]</p>
+<p>      Variable: SiraccaRep</p>
+<p>      CheckValue: </p>
+<p>      Modifier.Type: </p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-143">143</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<section class="condition">
+<p>    [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>      Scope: Creature [Siracca]</p>
+<p>      Variable: SiraccaQuestline</p>
+<p>      CheckValue: 1</p>
+<p>      Modifier.Type: </p>
+<p>    [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>      Scope: Creature [Siracca]</p>
+<p>      Variable: SiraccaRep</p>
+<p>      CheckValue: </p>
+<p>      Modifier.Type: </p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-144">144</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-145">145</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-142">
+[STATE] 142<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 2 Siracca#Siracca</p>
+<p>  [TEXTTOSAY] Alumu, this noble has been an inspiration to me and, I’m sure, to all goodhearted people we’ve encountered. [VOICELINE] audio\dialogs\siracca\alumu</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -5</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-145">145</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-143">
+[STATE] 143<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 2 Siracca#Siracca</p>
+<p>  [TEXTTOSAY] Yes, I have found {PLAYERNAME} to be a reliable leader and a good friend. [VOICELINE] audio\dialogs\siracca\yes_i_have</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-145">145</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-144">
+[STATE] 144<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 2 Siracca#Siracca</p>
+<p>  [TEXTTOSAY] I am not prepared to laud your actions, if that's what you're expecting. [VOICELINE] audio\dialogs\siracca\i_am_not</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-145">145</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-145">
+[STATE] 145<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.IsInPartyCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.IsInPartyCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: </p>
+<p>    CheckValue: </p>
+<p>    Creature: bjalla BGModel.Reference.CreatureDescRef</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-146">146</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-150">150</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-146">
+[STATE] 146<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope: Creature [bjalla]</p>
+<p>    VariableId: BjallaRep</p>
+<p>    CheckValue: 4</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-147">147</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope: Creature [bjalla]</p>
+<p>    VariableId: BjallaRep</p>
+<p>    CheckValue: </p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-148">148</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-149">149</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-147">
+[STATE] 147<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 3 bjalla#bjalla</p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: player_sex</p>
+<p>    CheckValue: female</p>
+</section>
+<p>  [TEXTTOSAY] I have my entire life been surrounded by the nobility, but the woman standing here is more noble than any I have met. I trust her with my life. [VOICELINE] audio\dialogs\bjalla\I_have_my__woman</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -5</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-150">150</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 3 bjalla#bjalla</p>
+<p>  [TEXTTOSAY] I have my entire life been surrounded by the nobility, but the man standing here is more noble than any I have met. I trust him with my life. [VOICELINE] audio\dialogs\bjalla\I_have_my__man</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -5</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-150">150</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-148">
+[STATE] 148<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 3 bjalla#bjalla</p>
+<p>  [TEXTTOSAY] I will commend {PLAYERNAME}’s honesty to any who ask. [VOICELINE] audio\dialogs\bjalla\I_will_commend</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-150">150</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-149">
+[STATE] 149<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 3 bjalla#bjalla</p>
+<p>  [TEXTTOSAY] {PLAYERNAME}, if you truly wished to earn my respect, you would be much more careful of your actions. [VOICELINE] audio\dialogs\bjalla\If_you_truly</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-150">150</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-150">
+[STATE] 150<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.IsInPartyCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.IsInPartyCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: </p>
+<p>    CheckValue: </p>
+<p>    Creature: Phimm BGModel.Reference.CreatureDescRef</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-151">151</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-155">155</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-151">
+[STATE] 151<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope: Creature [Phimm]</p>
+<p>    VariableId: PhimmRep</p>
+<p>    CheckValue: 4</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-152">152</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope: Creature [Phimm]</p>
+<p>    VariableId: PhimmRep</p>
+<p>    CheckValue: </p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-153">153</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-154">154</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-152">
+[STATE] 152<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 4 Phimm#Phimm</p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: player_sex</p>
+<p>    CheckValue: female</p>
+</section>
+<p>  [TEXTTOSAY] Lady, this tart has been the biggest laugh I’ve ever had. That’s the best thing I can say about anyone. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -5</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-155">155</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Lady, this bastard has been the biggest laugh I’ve ever had. That’s the best thing I can say about anyone. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -5</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-155">155</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-153">
+[STATE] 153<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 4 Phimm#Phimm</p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: player_sex</p>
+<p>    CheckValue: female</p>
+</section>
+<p>  [TEXTTOSAY] Eh. She’s all right. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-155">155</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Eh. He’s all right. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-155">155</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-154">
+[STATE] 154<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 4 Phimm#Phimm</p>
+<p>  [TEXTTOSAY] If I ever meet anyone duller than this imbecile, I’ll probably fall dead on the spot. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-155">155</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-155">
+[STATE] 155<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.IsInPartyCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.IsInPartyCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: </p>
+<p>    CheckValue: </p>
+<p>    Creature: Jade_the_NecroGoth BGModel.Reference.CreatureDescRef</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-156">156</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-160">160</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-156">
+[STATE] 156<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope: Creature [Jade_the_NecroGoth]</p>
+<p>    VariableId: JadeRep</p>
+<p>    CheckValue: 4</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-157">157</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope: Creature [Jade_the_NecroGoth]</p>
+<p>    VariableId: JadeRep</p>
+<p>    CheckValue: </p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-158">158</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-159">159</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-157">
+[STATE] 157<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 5 Jade_the_NecroGoth#Jade_the_NecroGoth</p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: player_sex</p>
+<p>    CheckValue: female</p>
+</section>
+<p>  [TEXTTOSAY] {PLAYERNAME} is the best friend and traveling companion I’ve ever known. If she ever died, I don’t know what I’d do! Metaphorically. I know exactly what I’d do. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -5</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-160">160</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 5 Jade_the_NecroGoth#Jade_the_NecroGoth</p>
+<p>  [TEXTTOSAY] {PLAYERNAME} is the best friend and traveling companion I’ve ever known. If he ever died, I don’t know what I’d do! Metaphorically. I know exactly what I’d do. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -5</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-106">106</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-158">
+[STATE] 158<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 5 Jade_the_NecroGoth#Jade_the_NecroGoth</p>
+<p>  [TEXTTOSAY] {PLAYERNAME} has been a good friend to me when no one else was there. I stand by {him/her}. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-160">160</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-159">
+[STATE] 159<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 5 Jade_the_NecroGoth#Jade_the_NecroGoth</p>
+<p>  [TEXTTOSAY] {HE/SHE}’s a bit namby-pamby for my tastes. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-160">160</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-160">
+[STATE] 160<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.IsInPartyCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.IsInPartyCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: </p>
+<p>    CheckValue: </p>
+<p>    Creature: sea_hag BGModel.Reference.CreatureDescRef</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-161">161</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-165">165</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-161">
+[STATE] 161<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope: Creature [sea_hag]</p>
+<p>    VariableId: TheSeaHagRep</p>
+<p>    CheckValue: 4</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-162">162</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope: Creature [sea_hag]</p>
+<p>    VariableId: TheSeaHagRep</p>
+<p>    CheckValue: </p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-163">163</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-164">164</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-162">
+[STATE] 162<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 6 sea_hag#sea_hag</p>
+<p>  [TEXTTOSAY] Though I have spoken and traveled with countless folks in my time, I think I have never been fonder of any of them than I am of this wanderer. [VOICELINE] audio\dialogs\sea_hag\Though_I_have</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -5</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-165">165</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-163">
+[STATE] 163<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 6 sea_hag#sea_hag</p>
+<p>  [TEXTTOSAY] During our travels, {PLAYERNAME} has given me much to think on, and most of it good. [VOICELINE] audio\dialogs\sea_hag\During_our_travels</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-165">165</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-164">
+[STATE] 164<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 6 sea_hag#sea_hag</p>
+<p>  [TEXTTOSAY] I have in my long life often considered my own end. With my companion here, I have been considering it daily, even hourly. [VOICELINE] audio\dialogs\sea_hag\I_have_in</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-165">165</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-165">
+[STATE] 165<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.IsInPartyCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.IsInPartyCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: </p>
+<p>    CheckValue: </p>
+<p>    Creature: arvex BGModel.Reference.CreatureDescRef</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-166">166</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-170">170</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-166">
+[STATE] 166<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope: Creature [arvex]</p>
+<p>    VariableId: ArvexRep</p>
+<p>    CheckValue: 4</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-167">167</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope: Creature [arvex]</p>
+<p>    VariableId: ArvexRep</p>
+<p>    CheckValue: </p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-168">168</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-169">169</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-167">
+[STATE] 167<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 7 arvex#arvex</p>
+<p>  [TEXTTOSAY] Our adventures with {PLAYERNAME} have almost made me forget my longing for death. Almost. [VOICELINE] audio\dialogs\Arvex\our_adventures</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -5</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-170">170</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-168">
+[STATE] 168<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 7 arvex#arvex</p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.VariableCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.VariableCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: player_sex</p>
+<p>    CheckValue: female</p>
+</section>
+<p>  [TEXTTOSAY] That I still follow her is all you need to know. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-170">170</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 7 arvex#arvex</p>
+<p>  [TEXTTOSAY] That I still follow him is all you need to know. [VOICELINE] </p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: -1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-170">170</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-169">
+[STATE] 169<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 7 arvex#arvex</p>
+<p>  [TEXTTOSAY] No, I would not recommend anyone to travel or break bread with this coward. [VOICELINE] audio\dialogs\Arvex\no_i_would_not</p>
+<section class="operation">
+<p>  [OPERATION] BGModel.GenericLogic.Operations.IncreaseDecreaseVariable</p>
+<p>    ScopeId: Alumu_GoD</p>
+<p>    Text: </p>
+<p>    Amount: </p>
+<p>    RawValue: 1</p>
+<p>    Text: </p>
+<p>    TODO: </p>
+<p>    VariableId: dia_meetingsAlumu_Difficulty_Increase</p>
+<p>    VariableScope: Creature</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-170">170</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-170">
+[STATE] 170<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.IsInPartyCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.IsInPartyCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: </p>
+<p>    CheckValue: </p>
+<p>    Creature: Rabinandera BGModel.Reference.CreatureDescRef</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-171">171</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-172">172</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-171">
+[STATE] 171<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 8 Rabinandera#Rabinandera</p>
+<p>  [TEXTTOSAY] It is the sun I hate! Round face, coin-like, unreachable gold. Kill again soon? [VOICELINE] audio\dialogs\Rabinandera\it_is_the_sun</p>
+<p>  [NEXTSTATE] <a href="#state-172">172</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-172">
+[STATE] 172<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Illuminating. Yes, I believe I have some notion of your reputation now. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-173">173</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-173">
+[STATE] 173<br>
+[TYPE] BGModel.Descriptors.Dialog.ForkDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+  [CONDITION - CHILD] BGModel.GenericLogic.Conditions.IsInPartyCondition
+<section class="condition">
+<p>  [CONDITION] BGModel.GenericLogic.Conditions.IsInPartyCondition</p>
+<p>    Scope:  []</p>
+<p>    VariableId: </p>
+<p>    CheckValue: </p>
+<p>    Creature: Rabinandera BGModel.Reference.CreatureDescRef</p>
+</section>
+<p>  [NEXTSTATE] <a href="#state-174">174</a></p>
+</section>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [NEXTSTATE] <a href="#state-119">119</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-174">
+[STATE] 174<br>
+[TYPE] BGModel.Descriptors.Dialog.SelectDialogElement
+</p>
+<section class="output">
+<p>[OUTPUT] Speaker: 0 </p>
+<p>  [TEXTTOSAY] Though that shaman frankly confuses me. Why– Never mind. Let’s not get distracted from our discussion. [VOICELINE] </p>
+<p>  [NEXTSTATE] <a href="#state-119">119</a></p>
+</section>
+</section>
+<section class="state">
+<p id="state-175">
+[STATE] 175<br>
+[TYPE] BGModel.Descriptors.Dialog.ExecuteOperationsDialogElement
+</p>
+<section class="exitoperation">
+<p>  [EXITOPERATION] BGModel.GenericLogic.Operations.SetVariable</p>
+<p>    CreatedVariableType: Bool</p>
+<p>    CustomFadeInDuration: 0</p>
+<p>    CustomFadeOutDuration: 0</p>
+<p>    OnFadeOutOperations: </p>
+<p>    RawValue: true</p>
+<p>    ScopeId: only_who_is_left</p>
+<p>    TargetArea: </p>
+<p>    VariableId: talked_with_alumu</p>
+<p>    VariableScope: Quest</p>
+</section>
+</section>
+</body>
+</html>
