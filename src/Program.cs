@@ -1,10 +1,29 @@
 ﻿using ii.Espen.Model;
 using Newtonsoft.Json;
 
-var dialogContent = File.ReadAllText(@"D:\data\BlackGeyser\dialogs\Meetings_Alumu_in_GoD.dia");
+//args = new string[2];
+//args[0] = @"D:\data\bg";
+//args[1] = @"Meetings_Alumu_in_GoD.dia";
+
+if (args.Length < 2)
+{
+    Console.WriteLine("Expected usage");
+    Console.WriteLine("  espen unpacked_data_directory filename.dia");
+    Console.WriteLine("");
+    Console.WriteLine("filename.dia is assumed to be /data/dialogs");
+    Console.WriteLine("Referenced text is read from /data/languages/en");
+    return;
+}
+
+var unpackedDataPath = args[0];
+var diaFilename = args[1];
+
+var diaPath = @$"{unpackedDataPath}\data\dialogs\{diaFilename}";
+
+var dialogContent = File.ReadAllText(diaPath);
 var dialog = JsonConvert.DeserializeObject<DialogRoot>(dialogContent);
 
-var dialogPath = $@"D:\data\BlackGeyser\languages\en\DIA_{dialog.Id}.txt";
+var dialogPath = $@"{unpackedDataPath}\data\languages\en\DIA_{dialog.Id}.txt";
 var textContent = File.ReadAllText(dialogPath);
 var text = JsonConvert.DeserializeObject<TextRoot>(textContent);
 
@@ -16,30 +35,26 @@ public class DialogHandler
 {
     private TextRoot text;
     private DialogRoot dialog;
-    private int depth = 0;
 
     public void Go(TextRoot text, DialogRoot dialog)
     {
         this.text = text;
         this.dialog = dialog;
 
-        //var state = dialog.StateMachine.States[Convert.ToInt32(dialog.StateMachine.InitialState)];
+        Console.WriteLine($"Availability: {dialog.Availability}");
+        Console.WriteLine($"Description: {dialog.Description}");
+        Console.WriteLine($"DisplayName: {dialog.DisplayName}");
+        Console.WriteLine($"Id: {dialog.Id}");        
+
         foreach (var state in dialog.StateMachine.States)
         {
             OutputState(state);
         }
     }
 
-
     private void OutputState(State state)
     {
         Console.WriteLine();
-        depth++;
-
-        if (depth > 100)
-            return;
-
-        //TODO: AvailabilityConditions
 
         Console.WriteLine($"[STATE] {state.Name} [TYPE] {state.Type}");
         if (state.Outputs != null)
@@ -119,12 +134,20 @@ public class DialogHandler
             }
         }
 
-        //TODO: ExitOperations
         if (state.ExitOperations != null)
         {
             foreach (var exitOperation in state.ExitOperations)
             {
                 Console.WriteLine($"  [EXITOPERATION] {exitOperation.Type}");
+                Console.WriteLine($"    CreatedVariableType: {exitOperation.CreatedVariableType}");
+                Console.WriteLine($"    CustomFadeInDuration: {exitOperation.CustomFadeInDuration}");
+                Console.WriteLine($"    CustomFadeOutDuration: {exitOperation.CustomFadeOutDuration}");
+                Console.WriteLine($"    OnFadeOutOperations: {exitOperation.OnFadeOutOperations}");
+                Console.WriteLine($"    RawValue: {exitOperation.RawValue}");
+                Console.WriteLine($"    ScopeId: {exitOperation.ScopeId}");
+                Console.WriteLine($"    TargetArea: {exitOperation.TargetArea}");
+                Console.WriteLine($"    VariableId: {exitOperation.VariableId}");
+                Console.WriteLine($"    VariableScope: {exitOperation.VariableScope}");
             }
         }
     }
