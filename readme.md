@@ -41,7 +41,7 @@ Note: Text is read from the /data/languages/en directory within the unpacked_dir
 
 Note: The html processor outputs a HTML file to the current directory, named after the input dia file, overwriting any existing file.
 
-An example console processor output is available [here](https://htmlpreview.github.io/?https://github.com/btigi/espen/blob/master/resources/sample-output-png.png)
+An example console processor output is available [here](https://raw.githubusercontent.com/btigi/espen/main/resources/sample-output-png.png)
 An example html processor output is available [here](https://htmlpreview.github.io/?https://github.com/btigi/espen/blob/master/resources/sample-output-html.html)
 
 Support Disclaimer
